@@ -14,6 +14,7 @@ class Pulsa extends Model
     protected $table = 'pulsa';
 
     protected $fillable = [
+        'Provider',
         'No_Hp',
         'Nominal'
     ];

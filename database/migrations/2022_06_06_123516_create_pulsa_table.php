@@ -16,11 +16,11 @@ return new class extends Migration
         Schema::create('pulsa', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('Ref_Id');
+           // $table->string('Ref_Id');
             $table->float('Nominal');
             $table->string('No_Hp');
             $table->string('Provider');
-            $table->string('Status');
+            //$table->string('Status');
             $table->softDeletes();
         });
     }
