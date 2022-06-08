@@ -19,6 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::get('/pulsas',[PulsaController::class, 'index']);
 Route::get('/pulsas/{id}',[PulsaController::class, 'show']);
+Route::get('/Bill/{id}', [BillController::class, 'sendNotification']);
 Route::post('/pulsas',[PulsaController::class, 'store']);
 Route::put('/pulsas/{id}',[PulsaController::class, 'update']);
 Route::delete('/pulsas/{id}',[PulsaController::class, 'destroy']);
